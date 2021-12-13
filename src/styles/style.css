@@ -1,0 +1,279 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;  
+}
+
+.books {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookcard {
+  width: 98%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row; 
+  background-color: rgb(227, 246, 255);
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  box-shadow: rgb(43, 42, 42) 1px 3px 6px;
+}
+
+.cover {
+  width: 25vw;
+  height: 25vh;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.info {
+  margin-top: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.4vh;
+  font-weight: 800;
+  color: rgb(36, 35, 35);
+  margin-bottom: 4px;
+}
+
+.author {
+  font-size: 1.8vh;
+  font-style: italic;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 1.8vh;
+}
+
+.pages {
+  text-align: end;
+  margin-right: 10px;
+  font-size: 1.6vh;
+  margin-bottom: 10px;
+  margin-top: auto;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#arrows button {
+  border-style: none;
+  background-color: white;
+}
+
+.BsRight {
+  font-weight: 900;
+  font-size: 33px;
+  color:rgb(32, 25, 46);
+  margin-left:auto;
+}
+
+.BsRight:hover {
+  color:black
+}
+
+.BsLeft {
+  font-weight: 900;
+  font-size: 33px;
+  color:rgb(32, 25, 46)
+}
+
+.BsLeft:hover {
+  color:black
+}
+
+#plus {
+  display: flex;
+  justify-content: right;
+  margin-top: 7px;
+}
+
+.plusbtn {
+  background-color: tomato;
+  box-shadow: rgb(43, 42, 42) 1px 3px 6px;
+  border: none;
+  border-radius: 50%;
+}
+
+.BsPlus {
+  margin-top: 2.5px;
+  margin-left: 0.5px;
+  font-size: x-large;
+  color: white;
+}
+
+#plus Link:hover {
+  background-color: rgb(179, 54, 32);
+}
+
+
+/*AddBooks Styles*/
+
+.ABContainer {
+  width:90%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+
+.form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: smaller;
+}
+
+.ABContainer h2 {
+  font-weight: 400;
+  text-align: center;
+  color: rgb(71, 71, 70);
+}
+
+.titles {
+  margin-top: 6px;
+  width: 98%;
+  padding: 0%;
+}
+
+.authors {
+  margin-top: 35px;
+  width: 100%;
+}
+
+.descriptions {
+  width: 97%;
+  padding-bottom: 50px;
+}
+
+.addpages {
+  margin-top: 14px;
+  width: 35%;
+}
+
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cancelBtn {
+  color: rgb(51, 51, 51);
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 15px;
+  background-color: rgb(255, 253, 253);
+  border-radius: 5px;
+  border-color: rgb(214, 214, 214);
+  border-width: 1px;
+  box-shadow: none;
+  padding: 5px 15px;
+  border-style: ridge;
+}
+
+.submitBtn {
+  color: rgb(253, 253, 253);
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #0b5ed7;
+  border-radius: 5px;
+  border-color: rgb(214, 214, 214);
+  border-width: 1px;
+  box-shadow: none;
+  padding: 5px 15px;
+  border-style: ridge;
+}
+
+.titles::placeholder {
+  font-size: 12px;
+}
+
+.authos::placeholder {
+  font-size: 12px;
+}
+
+.descriptions::placeholder {
+  font-size: 12px;
+}
+
+.addpages::placeholder {
+  font-size: 12px;
+}
+
+label {
+  font-size: 12px;
+  color: rgb(71, 71, 70);
+}
+
+option {
+  color: rgb(71, 71, 70);
+  font-size: 12px;
+  padding-bottom: 0px;
+  padding-top: -1px;
+}
+
+select {
+  color: rgb(71, 71, 70);
+  font-size: 12px;
+}
+
+
+.titleL {
+  font-size: 12px;
+  color: rgb(71, 71, 70);
+  text-align: end;
+  margin: 0px;
+  margin-bottom: -6px;
+}
+.descriptionL {
+  font-size: 12px;
+  color: rgb(71, 71, 70);
+  text-align: end;
+  margin: 0px;
+  margin-top: 26px;
+  margin-bottom: -1px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1428px) {
+  
+  .container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ABContainer {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
