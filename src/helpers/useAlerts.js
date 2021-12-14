@@ -7,9 +7,6 @@ export const useAlerts = () => {
           title: "Error",
           text: "El nombre de tu libro debe contener entre 1 y 100 carácteres",
           allowOutsideClick: true,
-          onBeforeOpen: () => {
-            Swal.showLoading();
-          },
         });
       };
       
@@ -18,9 +15,6 @@ export const useAlerts = () => {
           title: "Error",
           text: "La descripción de tu libro debe contener entre 1 y 800 carácteres",
           allowOutsideClick: true,
-          onBeforeOpen: () => {
-            Swal.showLoading();
-          },
         });
       };
       
@@ -30,9 +24,6 @@ export const useAlerts = () => {
           title: "Error",
           text: "El numero de páginas de tu libro debe ser un valor de tipo entero mayor que cero",
           allowOutsideClick: true,
-          onBeforeOpen: () => {
-            Swal.showLoading();
-          },
         });
       };
       
@@ -41,9 +32,6 @@ export const useAlerts = () => {
             title: "¡Enhorabuena!",
             text: "Tu libro ha sido correctamente guardado",
             allowOutsideClick: true,
-            onBeforeOpen: () => {
-              Swal.showLoading();
-            },
           });
         };
       

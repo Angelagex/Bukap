@@ -1,38 +1,65 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "../hooks/useForm";
 import { Link } from "react-router-dom";
 import { useAlerts} from "../helpers/useAlerts"
 
 export const AddBook = () => {
+
   const [formValue, handleInputChange, reset] = useForm({
     title: "",
     author: "",
     description: "",
-    pages: "",
+    pages: "",  
   });
 
   const { title, author, description, pages } = formValue;
 
   const [TitleAlert, DescriptionAlert, PagesAlert, Success] = useAlerts()
 
+  const between = (x, min, max) => {
+    return x.length >= min && x.length <= max;
+  }
+
   const handleSave = (e) => {
     e.preventDefault()
+    e.stopPropagation()
 
-    if (title.length > 100) {
+    if (!between(title,1,100)) {
       return TitleAlert()
     }
-    else if (description.length > 800) {
+    else if (!between(description,1,800)) {
       return DescriptionAlert()
     }
     else if (pages%1!==0||pages<=0) {
       return PagesAlert()
     }
-    else if (title.length<=100&&description.length<=800&&pages%1===0&&pages>0){
-      reset()
-      return Success()
+    else if (between(title,1,100)&&between(description,1,800)&&pages%1===0&&pages>0){
+      Success()
+      return reset()
     }
-
   }
+  
+  useEffect(() => {
+
+    let pgs = document.getElementById('pages')
+    let dctn = document.getElementById('description')
+    let tle = document.getElementById('title')
+
+    !between(title,1,100)
+    ? tle.style.boxShadow = "0 0 5px 1px red"
+    : tle.style.boxShadow = "none"
+
+    !between(description,1,800)
+    ? dctn.style.boxShadow = "0 0 5px 1px red"
+    : dctn.style.boxShadow = "none"
+
+    pages%1!==0||pages<=0
+    ? pgs.style.boxShadow = "0 0 5px 1px red"
+    : pgs.style.boxShadow = "none"
+
+
+    })
+
 
   return (
     <div className="ABContainer">
@@ -41,6 +68,7 @@ export const AddBook = () => {
         <div className="form">
         <p className="titleL">{title.length}/100</p>
           <input
+            id="title"
             type="text"
             name="title"
             className="titles"
@@ -68,6 +96,7 @@ export const AddBook = () => {
         <div className="form-group">
         <p className="descriptionL">{description.length}/800</p>
           <input
+            id="description"
             type="textarea"
             name="description"
             className="descriptions"
@@ -82,9 +111,7 @@ export const AddBook = () => {
           <input
             id="pages"
             type="number"
-            min="1"
             pattern="^[0-9]+"
-            autoComplete="off"
             name="pages"
             className="addpages"
             placeholder=" Número"
@@ -99,6 +126,8 @@ export const AddBook = () => {
           <button type="submit" className="submitBtn">
             Guardar
           </button>
+
+
         </div>
       </form>
     </div>
