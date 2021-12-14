@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Bukap/static/css/main.35d3befb.chunk.css",
+    "main.js": "/Bukap/static/js/main.d1f7a303.chunk.js",
+    "main.js.map": "/Bukap/static/js/main.d1f7a303.chunk.js.map",
+    "runtime-main.js": "/Bukap/static/js/runtime-main.6f42350b.js",
+    "runtime-main.js.map": "/Bukap/static/js/runtime-main.6f42350b.js.map",
+    "static/js/2.5485fe03.chunk.js": "/Bukap/static/js/2.5485fe03.chunk.js",
+    "static/js/2.5485fe03.chunk.js.map": "/Bukap/static/js/2.5485fe03.chunk.js.map",
+    "index.html": "/Bukap/index.html",
+    "static/css/main.35d3befb.chunk.css.map": "/Bukap/static/css/main.35d3befb.chunk.css.map",
+    "static/js/2.5485fe03.chunk.js.LICENSE.txt": "/Bukap/static/js/2.5485fe03.chunk.js.LICENSE.txt",
+    "static/media/bukapLogo.ad1434ed.gif": "/Bukap/static/media/bukapLogo.ad1434ed.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f42350b.js",
+    "static/js/2.5485fe03.chunk.js",
+    "static/css/main.35d3befb.chunk.css",
+    "static/js/main.d1f7a303.chunk.js"
+  ]
+}
