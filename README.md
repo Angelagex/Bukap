@@ -18,6 +18,15 @@ Para realizar la instalación del proyecto solo debes ejecutar
 
 Para visualizar el proyecto puedes seguir el siguiente [enlace de despliegue en Vercel](https://bukap-4c12302v8-angelagex.vercel.app/#/)
 
+## Tiempo estimado 
+
+A continuación puedes ver una imagen que expone el tiempo estimado que demoró la aplicación en ser creada; en la misma se puede ver el tiempo empleado en cada lenguaje y en cada archivo. La imagen es una captura de la web de [Wakatime](https://wakatime.com/)
+
+![image](https://user-images.githubusercontent.com/84979429/146220607-c85c7fbc-97fa-4335-9881-83c5b548be58.png)
+
 ## Notas
 
-En general la realización de la aplicación fue bastante sencilla, tuve la oportunidad de agregar más funcionalidades intentando mantener el diseño visual de la aplicación. 
+En general la realización de la aplicación fue bastante sencilla, tuve la oportunidad de agregar funcionalidades adicionales intentando mantener el esquema visual de la aplicación. 
+
+
+
